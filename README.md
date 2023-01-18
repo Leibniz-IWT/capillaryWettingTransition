@@ -1,1 +1,1 @@
-# capillaryWettingTransitions
+# capillaryWettingTransition
