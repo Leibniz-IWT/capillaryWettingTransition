@@ -1,8 +1,12 @@
-# capillaryWettingTransition
+## Installation Instructions - kistlerInterFlow
+### Prerequisites
+- [OpenFOAM v6](https://openfoam.org/download/source/ "OpenFOAM v6") installed
+- [OpenFOAM v6](https://openfoam.org/download/source/ "OpenFOAM v6") sourced in the currently open shell
 
-# Test Case Details
-Simulation cases are produced at varying inlet velocitys (file U) and contact angles (file alpha.water) found in 0.orig folder
+### Compilling
+1. `cd kistlerInterFlow`
+2. `./Allwmake`
+**Note: To compile use the Allwmake script provided. To clear binaries use the Allwclean script.**
 
-inlet velocitys: 0.05, 0.3, 0.33, 0.6
-
-contact angles: 0, 30, 60, 90, 120, 150, 170
+## Test Case Details
+Simulation cases are produced at varying inlet velocities and dynamic advancing contact angles found in the U and alpha.water files respectively under the 0.orig folder
