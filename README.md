@@ -4,7 +4,7 @@
 - [OpenFOAM v6](https://openfoam.org/download/source/ "OpenFOAM v6") sourced in the currently open shell
 
 ### Compilling
-1. `cd kistlerInterFlow`
+1. `cd  capillaryWettingTransition`
 2. `./Allwmake`
 **Note: To compile use the Allwmake script provided. To clear binaries use the Allwclean script.**
 
