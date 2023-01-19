@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/590525552.svg)](https://zenodo.org/badge/latestdoi/590525552)
 ## Installation Instructions - kistlerInterFlow
 ### Prerequisites
 - [OpenFOAM v6](https://openfoam.org/download/source/ "OpenFOAM v6") installed
