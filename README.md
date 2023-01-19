@@ -6,6 +6,7 @@
 ### Compilling
 1. `cd  capillaryWettingTransition`
 2. `./Allwmake`
+
 **Note: To compile use the Allwmake script provided. To clear binaries use the Allwclean script.**
 
 ## Test Case Details
