@@ -1,0 +1,50 @@
+#!/bin/sh
+
+cd solver
+
+mkdir dynamicKistlerContactAngle/lnInclude
+mkdir interfaceSigmaProperties/lnInclude
+mkdir isoAdvector/lnInclude
+mkdir navierslipfvpatchfield/lnInclude
+mkdir surfaceTensionForceModels/lnInclude
+
+cd dynamicKistlerContactAngle/lnInclude
+ln -s ../dynamicKistlerAlphaContactAngle/dynamicKistlerAlphaContactAngleFvPatchScalarField.C
+ln -s ../dynamicKistlerAlphaContactAngle/dynamicKistlerAlphaContactAngleFvPatchScalarField.H
+ln -s ../RiddersRoot/RiddersRoot.C
+ln -s ../RiddersRoot/RiddersRoot.H
+
+cd ../../interfaceSigmaProperties/lnInclude
+ln -s ../interfaceCompression/interfaceCompression.C
+ln -s ../interfaceCompression/interfaceCompression.H
+ln -s ../interfaceSigmaProperties.C
+ln -s ../interfaceSigmaProperties.H
+
+cd ../../isoAdvector/lnInclude
+ln -s ../isoAdvection/isoAdvectionTemplates.C
+ln -s ../isoAdvection/isoAdvection.C
+ln -s ../isoAdvection/isoAdvection.H
+ln -s ../isoCutCell/isoCutCell.C
+ln -s ../isoCutCell/isoCutCell.H
+ln -s ../isoCutFace/isoCutFace.C
+ln -s ../isoCutFace/isoCutFace.H
+
+cd ../../navierslipfvpatchfield/lnInclude
+ln -s ../navierSlipFvPatchField.C
+ln -s ../navierSlipFvPatchField.H
+
+cd ../../surfaceTensionForceModels/lnInclude
+ln -s ../Brackbill/Brackbill.C
+ln -s ../Brackbill/Brackbill.H
+
+ln -s ../SmoothedSF/SmoothedSF.C
+ln -s ../SmoothedSF/SmoothedSF.H
+ln -s ../SST/SST.C
+ln -s ../SST/SST.H
+ln -s ../surfaceTensionForceModel/newSurfaceTensionForceModel.C
+ln -s ../surfaceTensionForceModel/surfaceTensionForceModel.C
+ln -s ../surfaceTensionForceModel/surfaceTensionForceModel.H
+
+cd ../..
+
+wmake

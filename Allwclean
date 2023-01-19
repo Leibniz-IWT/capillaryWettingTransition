@@ -1,0 +1,11 @@
+#!/bin/sh
+
+cd solver
+
+wclean
+
+rm -rf dynamicKistlerContactAngle/lnInclude
+rm -rf interfaceSigmaProperties/lnInclude
+rm -rf isoAdvector/lnInclude
+rm -rf navierslipfvpatchfield/lnInclude
+rm -rf surfaceTensionForceModels/lnInclude

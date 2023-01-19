@@ -1,0 +1,25 @@
+#!/bin/sh
+cd ${0%/*} || exit 1                        # Run from this directory
+
+printf "Deleting Mesh\n"
+rm -rf constant/polyMesh
+rm -rf processor*
+
+printf "Deleting timestep directories\n"
+for timestep in $(ls | grep '^[0-9]\+\.[0-9]\+$\|^[0-9]\+$');
+do
+    if [ -d "${timestep}" ]; then
+        rm -rf $timestep
+    fi
+done
+
+for file in ./log.*
+do
+    if [ -f "${file}" ]; then
+        printf "${blu}Deleting log files${noc}\n"
+        rm -f log.*
+        break
+    fi
+done
+
+#------------------------------------------------------------------------------

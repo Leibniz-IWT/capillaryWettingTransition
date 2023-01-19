@@ -1,0 +1,23 @@
+kistlerInterFlow.C
+
+/* isoAdvector */
+isoAdvector/isoCutCell/isoCutCell.C
+isoAdvector/isoCutFace/isoCutFace.C
+isoAdvector/isoAdvection/isoAdvection.C
+
+/* Surface Tension Force Models */
+surfaceTensionForceModels/surfaceTensionForceModel/surfaceTensionForceModel.C
+surfaceTensionForceModels/surfaceTensionForceModel/newSurfaceTensionForceModel.C
+surfaceTensionForceModels/Brackbill/Brackbill.C
+surfaceTensionForceModels/SST/SST.C
+surfaceTensionForceModels/SmoothedSF/SmoothedSF.C
+
+/* Navier Slip Boundary Condition */
+navierslipfvpatchfield/navierSlipFvPatchField.C
+
+/* Kistler Dynamic Contact Angle Model */
+dynamicKistlerContactAngle/dynamicKistlerAlphaContactAngle/dynamicKistlerAlphaContactAngleFvPatchScalarField.C
+dynamicKistlerContactAngle/RiddersRoot/RiddersRoot.C
+interfaceSigmaProperties/interfaceSigmaProperties.C
+
+EXE = $(FOAM_USER_APPBIN)/kistlerInterFlow
